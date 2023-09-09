@@ -370,15 +370,22 @@ a:focus {
 
 // work section
 .work_section {
+  .heading_container {
+    align-items: center;
+    text-align: center;
+  }
+
   .work_container {
     display: flex;
     flex-wrap: wrap;
-    margin: 0 -1%;
+    justify-content: center;
+    padding-top: 10px;
 
     .box {
-      min-width: 300px;
-      display: flex;
-      align-items: stretch;
+      text-align: center;
+      position: relative;
+      z-index: 5;
+      margin: 35px 25px 0 25px;
 
       img {
         width: 100%;
@@ -396,10 +403,7 @@ a:focus {
       }
     }
   }
-
-
 }
-
 // end work section
 
 // client section
@@ -411,6 +415,11 @@ a:focus {
     align-items: center;
     margin-bottom: 45px;
   }
+  .work_container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 10px;
 
   .box {
     padding: 20px;
