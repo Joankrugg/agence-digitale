@@ -72,7 +72,7 @@ body {
 .hero_area {
   height: 100vh;
   background-color: #b5caee;
-  background-image: url(../images/hero-bg.jpg);
+  background-image: url(../images/beach.jpg);
   background-size: cover;
 }
 
@@ -202,7 +202,7 @@ a:focus {
 }
 
 .slider_section .detail-box h1 {
-  font-size: 4rem;
+  font-size: 3rem;
   text-transform: uppercase;
 }
 
