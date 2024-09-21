@@ -75,6 +75,30 @@ body {
   background-image: url(../images/beach.jpg);
   background-size: cover;
 }
+.hero_area_objectifs {
+  height: 100vh;
+  background-color: #b5caee;
+  background-image: url(../images/Objectifs.jpg);
+  background-size: cover;
+}
+.hero_area_prestations {
+  height: 100vh;
+  background-color: #b5caee;
+  background-image: url(../images/prestations.jpg);
+  background-size: cover;
+}
+.hero_area_porfolio {
+  height: 100vh;
+  background-color: #b5caee;
+  background-image: url(../images/Porfolio.jpg);
+  background-size: cover;
+}
+.hero_area_contact {
+  height: 100vh;
+  background-color: #b5caee;
+  background-image: url(../images/Contact.jpg);
+  background-size: cover;
+}
 
 .sub_page .hero_area {
   height: auto;
