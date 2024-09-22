@@ -34,7 +34,7 @@
     <!-- header section strats -->
     <header class="header_section">
       <div class="container-fluid">
-        <nav class="navbar navbar-expand-lg custom_nav-container pt-3">
+        <nav class="navbar fixed-top navbar-expand-lg custom_nav-container pt-3">
           <a class="navbar-brand" href="index.html">
             <span style='text-shadow: black 1px 1px 3px;'>
               MODERNBOXRECORDS
@@ -372,6 +372,25 @@
     });
   </script>
   <!-- end owl carousel script -->
+  <script>
+    window.onscroll = function() {
+      changeNavColorGradually();
+    };
+
+    function changeNavColorGradually() {
+      var nav = document.querySelector("nav");
+
+      // Récupère la distance de défilement
+      var scrollPosition = window.scrollY;
+
+      // Limite la valeur de scroll entre 0 et 800
+      var maxScroll = 800;
+      var opacity = Math.min(scrollPosition / maxScroll, 1);
+
+      // Applique la couleur de fond avec une opacité progressive
+      nav.style.backgroundColor = `rgba(35, 35, 35, ${opacity})`;
+    }
+  </script>
 
 </body>
 
