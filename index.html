@@ -111,11 +111,6 @@
     <section class=" slider_section position-relative">
       <div class="container">
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" style="padding: 150px 0px;">
-          <ol class="carousel-indicators">
-            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-          </ol>
           <div class="carousel-inner">
             <div class="carousel-item active">
               <div class="row">
@@ -133,48 +128,7 @@
                           DÉCOUVRIR NOS FORMULES
                         </a>
                       </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <div class="row">
-                <div class="col">
-                  <div class="detail-box">
-                    <div>
-                      <h1 style="font-size: 30px; text-shadow: black 1px 1px 3px;">
-                        ModernBoxRecords
-                      </h1>
-                      <p style='text-shadow: black 1px 1px 3px;'>
-                        Vous avez une idée précise, mais tout simplement pas le temps
-                      </p>
-                      <div class="">
-                        <a data-toggle="modal" data-target="#contactModal">
-                          Contactez-nous
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <div class="row">
-                <div class="col">
-                  <div class="detail-box">
-                    <div>
-                      <h1 style="font-size: 30px; text-shadow: black 1px 1px 3px;">
-                        ModernBoxRecords
-                      </h1>
-                      <p style='text-shadow: black 1px 1px 3px;'>
-                        Vous avez plusieurs envies mais il vous faut une stratégie...
-                      </p>
-                      <div class="">
-                        <a data-toggle="modal" data-target="#contactModal">
-                          Contactez-nous
-                        </a>
-                      </div>
+                      <img src='images/action-arrow.gif' id='scrollImage'>
                     </div>
                   </div>
                 </div>
@@ -189,7 +143,7 @@
 
   <!-- do section -->
 
-  <section class="do_section layout_padding">
+  <section class="do_section layout_padding" id='aim'>
     <div class="container">
       <div class="heading_container">
         <h2 style='margin-bottom: 30px;'>
@@ -650,22 +604,9 @@
   </script>
   <!-- owl carousel script
     -->
-  <script type="text/javascript">
-    $(".owl-carousel").owlCarousel({
-      loop: true,
-      margin: 0,
-      navText: [],
-      center: true,
-      autoplay: true,
-      autoplayHoverPause: true,
-      responsive: {
-        0: {
-          items: 1
-        },
-        1000: {
-          items: 3
-        }
-      }
+  <script>
+    document.getElementById('scrollImage').addEventListener('click', function() {
+        document.getElementById('aim').scrollIntoView({ behavior: 'smooth' });
     });
   </script>
   <script>

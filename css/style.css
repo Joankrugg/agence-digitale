@@ -72,19 +72,19 @@ body {
 .hero_area {
   height: 100vh;
   background-color: #b5caee;
-  background-image: url(../images/beach.jpg);
+  background-image: url(../images/electro.jpg);
   background-size: cover;
 }
 .hero_area_objectifs {
   height: 100vh;
   background-color: #b5caee;
-  background-image: url(../images/Objectifs.jpg);
+  background-image: url(../images/hiphop.jpg);
   background-size: cover;
 }
 .hero_area_prestations {
   height: 100vh;
   background-color: #b5caee;
-  background-image: url(../images/prestations.jpg);
+  background-image: url(../images/rock.jpg);
   background-size: cover;
 }
 .hero_area_porfolio {
@@ -223,7 +223,6 @@ a:focus {
 
 .slider_section .detail-box {
   text-align: center;
-  margin-bottom: 110px;
 }
 
 .slider_section .detail-box h1 {
@@ -252,6 +251,10 @@ a:focus {
 .slider_section .detail-box a:hover {
   background-color: transparent;
   color: #ffffff;
+}
+.slider_section .detail-box img {
+  margin-top: 60px;
+  width: 45px;
 }
 
 .slider_section #carouselExampleIndicators {
@@ -315,10 +318,6 @@ a:focus {
 
 .do_section .do_container .box .detail-box {
   margin-top: 35px;
-}
-
-.do_section .do_container .box:hover .img-box {
-  background-color: #fec016;
 }
 
 .do_section .do_container .arrow_bg::before {
