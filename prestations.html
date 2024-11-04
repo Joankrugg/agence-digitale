@@ -125,27 +125,7 @@
                           Contactez-nous
                         </a>
                       </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <div class="row">
-                <div class="col">
-                  <div class="detail-box">
-                    <div>
-                      <h1 style="font-size: 30px; text-shadow: black 1px 1px 3px;">
-                        Entreprenez<br>avec<br>ModernBoxRecords
-                      </h1>
-                      <p style='text-shadow: black 1px 1px 3px;'>
-                        Vous avez un besoin mais préférez y investir autre chose que de l'argent...
-                      </p>
-                      <div class="">
-                        <a href="https://forms.gle/SGRpmMK7s6sWaqcM6" target="_blank">
-                          Contactez-nous
-                        </a>
-                      </div>
+                      <img src='images/action-arrow.gif' id='scrollPresta'>
                     </div>
                   </div>
                 </div>
@@ -160,14 +140,14 @@
 
   <!-- do section -->
 
-  <section class="do_section layout_padding">
+  <section class="do_section layout_padding" id='presta'>
     <div class="container">
       <div class="heading_container">
         <h2>
           Concept
         </h2>
         <p>
-          Agence digitale engagée, nous utilisons des technologies open-source car nous croyons au pouvoir de l'entraide.<br>L'argent ne doit pas être une limite à la mise en oeuvre des idées. <br>C'est la raison pour laquelle notre agence propose de réaliser des de l'échange de savoir-faire.
+          Agence digitale engagée, nous utilisons des technologies open-source car nous croyons au pouvoir de l'entraide et misons sur le long terme<br>L'argent ne doit pas être une limite à la mise en oeuvre des idées. <br>C'est la raison pour laquelle notre agence est un collectif de savoir-faire.
         </p>
       </div>
       <div class="do_container">
@@ -379,27 +359,11 @@
   <script type="text/javascript" src="js/bootstrap.js"></script>
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js">
   </script>
-  <!-- owl carousel script
-    -->
-  <script type="text/javascript">
-    $(".owl-carousel").owlCarousel({
-      loop: true,
-      margin: 0,
-      navText: [],
-      center: true,
-      autoplay: true,
-      autoplayHoverPause: true,
-      responsive: {
-        0: {
-          items: 1
-        },
-        1000: {
-          items: 3
-        }
-      }
+  <script>
+    document.getElementById('scrollPresta').addEventListener('click', function() {
+        document.getElementById('presta').scrollIntoView({ behavior: 'smooth' });
     });
   </script>
-  <!-- end owl carousel script -->
   <script>
     window.onscroll = function() {
       changeNavColorGradually();

@@ -126,6 +126,7 @@
                           Contactez-nous
                         </a>
                       </div>
+                      <img src='images/action-arrow.gif' id='scrollObjective'>
                     </div>
                   </div>
                 </div>
@@ -140,7 +141,7 @@
 
   <!-- who section -->
 
-   <section class="who_section" style="padding: 20px 0px;">
+   <section class="who_section" style="padding: 20px 0px;" id='objective'>
     <div class="container">
       <div class="row">
         <div class="col-md-5">
@@ -156,7 +157,7 @@
               </h3>
             </div>
             <p>
-              Nous mettons notre expertise au service de la réalisation de vos projets, que ce soit pour créer l'intégralité de votre vitrine digitale ou juste de créer des contenus ou outils. <br>Ce qui distingue notre démarche des démarches classiques, c'est la flexibilité et la passion pour le partage de connaissances. Plutôt que de demander des paiements en argent, nous croyons en la puissance du troc ; Vous avez forcément des compétences ou des ressources précieuses à offrir en échange de notre expertise éditoriale. C'est une option vivement encouragée même si la démarche classique reste possible. <br>Faîtes une demande de contact à l'agence afin que l'on discute de votre projet, et que nous voyons ensemble les solutions que nous pouvons vous proposer.
+              Nous mettons notre expertise au service de la réalisation de vos projets, que ce soit pour créer l'intégralité de votre vitrine digitale ou juste de créer des contenus ou outils. <br>Ce qui distingue notre démarche des démarches classiques, c'est la flexibilité et la passion pour le partage de connaissances. Vous êtes dans une démarche de croissance et vos besoins d'aujourd'hui ne sont ni ceux d'hier, ni ceux de demain. Chaque membre du collective intervient avec son expertise et la maîtrise des codes de son domaine de compétence <br>Faîtes une demande de contact à l'agence afin que l'on discute de votre projet, et que nous voyons ensemble les solutions et l'équipe parfaite que nous pouvons vous proposer.
             </p>
             <div>
               <a href="https://forms.gle/SGRpmMK7s6sWaqcM6" target="_blank">
@@ -326,26 +327,13 @@
   </script>
   <!-- owl carousel script
     -->
-  <script type="text/javascript">
-    $(".owl-carousel").owlCarousel({
-      loop: true,
-      margin: 0,
-      navText: [],
-      center: true,
-      autoplay: true,
-      autoplayHoverPause: true,
-      responsive: {
-        0: {
-          items: 1
-        },
-        1000: {
-          items: 3
-        }
-      }
+  <script>
+    document.getElementById('scrollObjective').addEventListener('click', function() {
+        document.getElementById('objective').scrollIntoView({ behavior: 'smooth' });
     });
   </script>
   <!-- end owl carousel script -->
-    <script>
+  <script>
     window.onscroll = function() {
       changeNavColorGradually();
     };
